@@ -2,4 +2,4 @@
 bin
 obj
 gen
-libs/*.so
+*.so

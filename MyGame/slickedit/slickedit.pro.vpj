@@ -11,7 +11,7 @@
         Version="1"
         DebugCallbackName="windbg"
         OutputFile="%bdslickedit.so"
-        CompilerConfigName="">
+        CompilerConfigName="Unix Includes">
         <Menu>
             <Target
                 Name="Compile"
@@ -112,8 +112,9 @@
             </Target>
         </Menu>
         <Includes>
-            <Include Dir="./"/>
-            <Include Dir="./cocos2d/cocos/2d/"/>
+            <Include Dir="../cocos2d/cocos"/>
+            <Include Dir="../cocos2d/cocos/platform"/>
+            <Include Dir="../cocos2d/cocos/2d/"/>
             <Include Dir="../Classes/"/>
         </Includes>
         <List Name="GNUC Options">
@@ -128,7 +129,7 @@
         Version="1"
         DebugCallbackName="windbg"
         OutputFile="%bdslickedit.so"
-        CompilerConfigName="">
+        CompilerConfigName="Unix Includes">
         <Menu>
             <Target
                 Name="Compile"
@@ -229,8 +230,9 @@
             </Target>
         </Menu>
         <Includes>
-            <Include Dir="./"/>
-            <Include Dir="./cocos2d/cocos/2d/"/>
+            <Include Dir="../cocos2d/cocos"/>
+            <Include Dir="../cocos2d/cocos/platform"/>
+            <Include Dir="../cocos2d/cocos/2d/"/>
             <Include Dir="../Classes/"/>
         </Includes>
         <List Name="GNUC Options">
@@ -245,7 +247,7 @@
         DebugCallbackName="gdb"
         Version="1"
         OutputFile="%bdslickedit.so"
-        CompilerConfigName="Latest Version">
+        CompilerConfigName="Unix Includes">
         <Menu>
             <Target
                 Name="Compile"
@@ -332,8 +334,9 @@
                 Value="SharedLibrary"/>
         </List>
         <Includes>
-            <Include Dir="./"/>
-            <Include Dir="./cocos2d/cocos/2d/"/>
+            <Include Dir="../cocos2d/cocos"/>
+            <Include Dir="../cocos2d/cocos/platform"/>
+            <Include Dir="../cocos2d/cocos/2d/"/>
             <Include Dir="../Classes/"/>
         </Includes>
     </Config>
@@ -343,7 +346,7 @@
         DebugCallbackName="gdb"
         Version="1"
         OutputFile="%bdslickedit.so"
-        CompilerConfigName="Latest Version">
+        CompilerConfigName="Unix Includes">
         <Menu>
             <Target
                 Name="Compile"
@@ -430,8 +433,9 @@
                 Value="SharedLibrary"/>
         </List>
         <Includes>
-            <Include Dir="./"/>
-            <Include Dir="./cocos2d/cocos/2d/"/>
+            <Include Dir="../cocos2d/cocos"/>
+            <Include Dir="../cocos2d/cocos/platform"/>
+            <Include Dir="../cocos2d/cocos/2d/"/>
             <Include Dir="../Classes/"/>
         </Includes>
     </Config>
@@ -441,7 +445,7 @@
         DebugCallbackName="gdb"
         Version="1"
         OutputFile="%bdslickedit.so"
-        CompilerConfigName="Latest Version">
+        CompilerConfigName="Unix Includes">
         <Menu>
             <Target
                 Name="Compile"
@@ -528,8 +532,9 @@
                 Value="SharedLibrary"/>
         </List>
         <Includes>
-            <Include Dir="./"/>
-            <Include Dir="./cocos2d/cocos/2d/"/>
+            <Include Dir="../cocos2d/cocos"/>
+            <Include Dir="../cocos2d/cocos/platform"/>
+            <Include Dir="../cocos2d/cocos/2d/"/>
             <Include Dir="../Classes/"/>
         </Includes>
     </Config>
@@ -539,7 +544,7 @@
         DebugCallbackName="gdb"
         Version="1"
         OutputFile="%bdslickedit.so"
-        CompilerConfigName="Latest Version">
+        CompilerConfigName="Unix Includes">
         <Menu>
             <Target
                 Name="Compile"
@@ -626,8 +631,9 @@
                 Value="SharedLibrary"/>
         </List>
         <Includes>
-            <Include Dir="./"/>
-            <Include Dir="./cocos2d/cocos/2d/"/>
+            <Include Dir="../cocos2d/cocos"/>
+            <Include Dir="../cocos2d/cocos/platform"/>
+            <Include Dir="../cocos2d/cocos/2d/"/>
             <Include Dir="../Classes/"/>
         </Includes>
     </Config>
@@ -636,12 +642,14 @@
             Name="Source Files"
             Filters="*.c;*.C;*.cc;*.cpp;*.cp;*.cxx;*.c++;*.prg;*.pas;*.dpr;*.asm;*.s;*.bas;*.java;*.cs;*.sc;*.e;*.cob;*.html;*.rc;*.tcl;*.py;*.pl;*.d;*.m;*.mm;*.go">
             <F N="../Classes/AppDelegate.cpp"/>
+            <F N="../Classes/FirstScene.cpp"/>
             <F N="../Classes/HelloWorldScene.cpp"/>
         </Folder>
         <Folder
             Name="Header Files"
             Filters="*.h;*.H;*.hh;*.hpp;*.hxx;*.h++;*.inc;*.sh;*.cpy;*.if">
             <F N="../Classes/AppDelegate.h"/>
+            <F N="../Classes/FirstScene.h"/>
             <F N="../Classes/HelloWorldScene.h"/>
         </Folder>
         <Folder

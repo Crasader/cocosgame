@@ -85,9 +85,14 @@ bool HelloWorld::init()
 
 void HelloWorld::menuCloseCallback(Ref* pSender)
 {
-    Director::getInstance()->end();
+//  Director::getInstance()->end();
+    Director* director = Director::getInstance();
 
-#if (CC_TARGET_PLATFORM == CC_PLATFORM_IOS)
-    exit(0);
-#endif
+    FirstScene* fs = new FirstScene();
+    fs->init();
+    director->pushScene(fs);
+
+//#if (CC_TARGET_PLATFORM == CC_PLATFORM_IOS)
+//    exit(0);
+//#endif
 }
