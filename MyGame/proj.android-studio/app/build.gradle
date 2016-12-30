@@ -10,6 +10,16 @@ android {
         targetSdkVersion 22
         versionCode 1
         versionName "1.0"
+
+        externalNativeBuild {
+            ndkBuild {
+                arguments "USE_ARM_MODE=1"
+            }
+        }
+        ndk {
+            //abiFilters 'x86', 'armeabi', 'armeabi-v7a'
+            abiFilters 'armeabi-v7a'
+        }
     }
 
     sourceSets.main {
@@ -41,7 +51,16 @@ android {
             }
         }
     }
+
+    externalNativeBuild {
+
+        ndkBuild {
+            path 'jni/Android.mk'
+        }
+    }
+
 }
 
 dependencies {
+    compile project(":libcocos2dx")
 }
