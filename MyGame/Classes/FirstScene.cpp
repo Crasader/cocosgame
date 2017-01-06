@@ -27,15 +27,16 @@ bool FirstScene::init()
     // add the label as a child to this layer
     layer->addChild(label, 1);
 
+
     return true;
 }
 
 
-//void FirstScene::menuCloseCallback(Ref* pSender)
-//{
-//    Director::getInstance()->end();
-//
-//#if (CC_TARGET_PLATFORM == CC_PLATFORM_IOS)
-//    exit(0);
-//#endif
-//}
+void FirstScene::menuCloseCallback(Ref* pSender)
+{
+    Director::getInstance()->end();
+
+#if (CC_TARGET_PLATFORM == CC_PLATFORM_IOS)
+    exit(0);
+#endif
+}

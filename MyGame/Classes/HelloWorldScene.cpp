@@ -40,6 +40,9 @@ bool HelloWorld::init()
                                            "CloseNormal.png",
                                            "CloseSelected.png",
                                            CC_CALLBACK_1(HelloWorld::menuCloseCallback, this));
+
+
+
     
 	closeItem->setPosition(Vec2(origin.x + visibleSize.width - closeItem->getContentSize().width/2 ,
                                 origin.y + closeItem->getContentSize().height/2));
@@ -55,7 +58,7 @@ bool HelloWorld::init()
     // add a label shows "Hello World"
     // create and initialize a label
     
-    auto label = Label::createWithTTF("Hello Worldnnnnnn", "fonts/Marker Felt.ttf", 24);
+    auto label = Label::createWithTTF("Hello World", "fonts/Marker Felt.ttf", 24);
     
     // position the label on the center of the screen
     label->setPosition(Vec2(origin.x + visibleSize.width/2,
@@ -73,13 +76,6 @@ bool HelloWorld::init()
     // add the sprite as a child to this layer
     this->addChild(sprite, 0);
 
-    Label* l1 = Label::createWithTTF("I am a good man", "fonts/Marker Felt.ttf", 24);
-    Vec2 vec = Vec2(origin.x + visibleSize.width / 2 + 200, origin.y + visibleSize.height - l1->getContentSize().height);
-    l1->setPosition(vec);
-    this->addChild(l1, 2);
-
-    log("DEBUG, origin.x:%f, origin.Y:%f, visibleSize.width:%f, visibleSize.height:%f", origin.x, origin.y, visibleSize.width, visibleSize.height);
-    
     return true;
 }
 
