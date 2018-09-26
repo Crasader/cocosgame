@@ -1,0 +1,8 @@
+# 生成pre-build库, 也可以叫cocos2dx库, 一些静态文件
+cocos gen-libs -p android --app-abi x86 --ap android-22 --android-studio
+
+# 使用gradle 生成apk或者使用android－studio 生成apk
+gradle --info build
+
+# 可使用android－studio来编写cpp／c来断点调试
+

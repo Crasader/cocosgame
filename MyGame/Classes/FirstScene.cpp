@@ -27,6 +27,7 @@ bool FirstScene::init()
     // add the label as a child to this layer
     layer->addChild(label, 1);
 
+
     return true;
 }
 
